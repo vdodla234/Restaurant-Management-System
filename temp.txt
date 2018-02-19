@@ -1,0 +1,11 @@
+<?php 
+$add1 = $_POST['add1'];
+$add2= $_POST['add2'];
+$city=$_POST['city'];
+$state=$_POST['state'];
+$zip=$_POST['zip'];
+
+$sql = "UPDATE employee SET address_line_1='$add1',address_line_2='$add2',city='$city',state='$state',zip_code=$zip where type='Full Time'";
+$result = $conn->query($sql);
+$conn->close();
+?>

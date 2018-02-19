@@ -1,0 +1,122 @@
+<html>
+<head>
+<title color="white">Employee Form</title>
+<script src="form_validation.js"></script>
+<style>
+body{background-repeat:no-repeat;
+background-size:100%}
+#form{width: 15em;height: 3sem;}
+#left{line-height:30px;width:250px;float:left;padding:15px; }
+#right{line-height:30px;width:250px;float:right;padding:15px; }
+
+label {color: white;}
+</style>
+</head><font color="white">
+<body onload="document.registration.empid.focus();" background="EmpFORM.jpg">
+
+<h1 align="center"><font size="10" color="white">R@$0Y!</font></h1>
+<h3 align="center"><font color="white">-The Essence Of Indian Tradition-</font></h3>
+<table cellpadding=30>
+<tr>
+<td><form action="home.html" method="post"><input type="submit" value="Home" id="form" ></form></td>
+<td><form action="menu.php" method="post"><input type="submit" value="Menu" id="form"></form></td>
+<td><form action="res.html" method="post"><input type="submit" value="Reservation" id="form"></form></td>
+<td><form action="about.html" method="post"><input type="submit" value="About us" id="form"></form></td>
+<td><form action="Login.html" method="post"><input type="submit" value="Employee-Login" id="form"></form></td>
+<td><form action="EmpFORM.html" method="post"><input type="submit" value="Job-Application" id="form"></form></td>
+</tr>
+</table>
+<center><h1>Employee Form:</h1><HR>
+<p>**Every detail in the form below should be filled accordingly**</p><HR>
+<form name="registration" onsubmit="return formvalidation();">
+<table border=5 width=50% bordercolor="white">
+
+<tr>
+<td align=center><label for="empid1">First Name:</label></td>
+<td align=left><input type="text" name="empid1" size="12"/></td>
+</tr>
+
+<tr>
+<td align=center><label for="empid2">Last Name:</label></td>
+<td align=left><input type="text" name="empid2" size="12"/></td>
+</tr>
+
+<tr>
+<td align=center><label for="empadd1">Address Line-1:</label></td>
+<td align=left><input type="text" name="empadd1" size="50"/></td>
+</tr> 
+
+<tr>
+<td align=center><label for="empadd2">Address Line-2:</label></td>
+<td align=left><input type="text" name="empadd2" size="50"/></td>
+</tr> 
+
+<tr>
+<td align=center><label for="city">City:</label></td>
+<td align=left><input type="text" name="city"/></td>
+</tr> 
+
+<tr>
+<td align=center><label for="state">State:</label></td>
+<td align=left><input type="text" name="state"/></td>
+</tr> 
+
+<tr>
+<td align=center><label for="Zip">Zip code:</label></td>
+<td align=left><input type="text" name="Zip"/></td>
+</tr> 
+
+<tr>
+<td align=center><label for="email">Email-id:</label></td>
+<td align=left><input type="text" name="email" size="50"/></td>
+</tr> 
+
+<tr>
+<td align=center><label for="contact">Contact:</label></td>
+<td align=left><input type="text" name="contact" size="10"/></td>
+</tr> 
+
+<tr>
+<td align=center><label for="ssn">Social Security#(ssn):</label></td>
+<td align=left><input type="text" name="ssn" size="50"/></td>
+</tr> 
+
+<tr>
+<td align=center><label for="type">Type:</label></td>
+<td align=left>
+<input type="radio" name="type" value="manager"/>
+<label><span>Manager</span>
+<input type="radio" name="type" value="full"/>
+<span>Full-Time</span>
+<input type="radio" name="type" value="part"/>
+<span>Part-Time</span></label>
+</td>
+</tr> 
+
+<tr>
+<td align=center><label>Language:</label></td>
+<td align=left>
+<input type="radio" name="en"/>
+<label><span>English</span>
+<input type="radio" name="en"/>
+<span>Non-English</span>
+</td>
+</tr> 
+
+<tr>
+<td align=center><label for="desc">Qualification/Experience:</label></td>
+<td align=left><textarea name="desc" id="desc"></textarea></td>
+</tr> 
+
+<tr>
+<td colspan=2 align=center><input type="submit" name="submit" value="Submit"/>
+&nbsp&nbsp&nbsp<input type="reset" name="clear" value="Clear"/></td>
+</tr> 
+<tr>
+<td colspan=2 align=center>
+<label><p>©copyrights reserved by AURUM technologies</p>
+</td></tr>
+</table>
+</center>
+</body>
+</html>
